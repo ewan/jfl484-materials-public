@@ -1,0 +1,151 @@
+# text = Pro Deo amur et pro Christian poblo et nostro commun salvament, d'ist di in avant, in quant Deus savir et podir me dunat, si salvarai eo cist meon fradre Karlo et in aiudha et in cadhuna cosa, si cum om per dreit son fradra salvar dift, in o quid il mi altresi fazet.
+# translation = Pour l'amour de Dieu et pour le peuple chrétien et notre salut commun, à partir de ce jour, en tant que Dieu me donne savoir et pouvoir, je soutiendrai mon frère Charles et par aide et en toute chose, comme on doit par droit soutenir son frère, à condition qu'il en fasse de même pour moi.
+# translation_en = For the love of God and for the Christian people and our common salvation, from this day forward, as God gives me knowledge and power, I will support my brother Charles both with aid and in all things, as one ought by right to support his brother, on condition that he do the same for me.
+# newdoc id = Strasbourg_842_prose
+# sent_id = 17675
+# newpar id = 1
+1	Pro	_	ADP	PRE	_	3	case	_	XmlId=w_strasbBfm_001
+2	Deo	_	PROPN	NOMpro	_	3	nmod	_	XmlId=w_strasbBfm_002
+3	amur	_	NOUN	NOMcom	_	29	obl	_	XmlId=w_strasbBfm_003
+4	et	_	CCONJ	CONcoo	_	7	cc	_	XmlId=w_strasbBfm_004
+5	pro	_	ADP	PRE	_	7	case	_	XmlId=w_strasbBfm_005
+6	Christian	_	ADJ	ADJqua	_	7	amod	_	XmlId=w_strasbBfm_006
+7	poblo	_	NOUN	NOMcom	_	3	conj	_	XmlId=w_strasbBfm_007
+8	et	_	CCONJ	CONcoo	_	11	cc	_	XmlId=w_strasbBfm_008
+9	nostro	_	DET	DETpos	Poss=Yes	11	det	_	XmlId=w_strasbBfm_009
+10	commun	_	ADJ	ADJqua	_	11	amod	_	XmlId=w_strasbBfm_010
+11	salvament	_	NOUN	NOMcom	_	3	conj	_	SpaceAfter=No|XmlId=w_strasbBfm_011
+12	,	_	PUNCT	PONfbl	_	29	punct	_	XmlId=w_strasbBfm_012
+13	d'	_	ADP	PRE	_	15	case	_	SpaceAfter=No|XmlId=w_strasbBfm_013
+14	ist	_	DET	DETdem	PronType=Dem	15	det	_	XmlId=w_strasbBfm_014
+15	di	_	NOUN	NOMcom	_	29	obl	_	XmlId=w_strasbBfm_015
+16	in	_	ADP	PRE	_	17	case	_	XmlId=w_strasbBfm_016
+17	avant	_	ADV	ADVgen	_	29	obl	_	SpaceAfter=No|XmlId=w_strasbBfm_017
+18	,	_	PUNCT	PONfbl	_	26	punct	_	XmlId=w_strasbBfm_018
+19	in	_	ADP	PRE	_	20	case	_	XmlId=w_strasbBfm_019
+20	quant	_	PRON	PROind	PronType=Ind	26	obl	_	XmlId=w_strasbBfm_020
+21	Deus	_	PROPN	NOMpro	_	26	nsubj	_	XmlId=w_strasbBfm_021
+22	savir	_	VERB	VERinf	VerbForm=Inf	26	obj	_	XmlId=w_strasbBfm_022
+23	et	_	CCONJ	CONcoo	_	24	cc	_	XmlId=w_strasbBfm_023
+24	podir	_	VERB	VERinf	VerbForm=Inf	22	conj	_	XmlId=w_strasbBfm_024
+25	me	_	PRON	PROper	PronType=Prs	26	iobj	_	XmlId=w_strasbBfm_025
+26	dunat	_	VERB	VERcjg	VerbForm=Fin	29	advcl	_	SpaceAfter=No|XmlId=w_strasbBfm_026
+27	,	_	PUNCT	PONfbl	_	26	punct	_	XmlId=w_strasbBfm_027
+28	si	_	ADV	ADVgen	_	29	advmod	_	XmlId=w_strasbBfm_028
+29	salvarai	_	VERB	VERcjg	VerbForm=Fin	0	root	_	XmlId=w_strasbBfm_029
+30	eo	_	PRON	PROper	PronType=Prs	29	nsubj	_	XmlId=w_strasbBfm_030
+31	cist	_	DET	DETdem	PronType=Dem	33	det	_	XmlId=w_strasbBfm_032
+32	meon	_	ADJ	ADJpos	Poss=Yes	33	amod	_	XmlId=w_strasbBfm_033
+33	fradre	_	NOUN	NOMcom	_	29	obj	_	XmlId=w_strasbBfm_034
+34	Karlo	_	PROPN	NOMpro	_	33	flat	_	XmlId=w_strasbBfm_035
+35	et	_	CCONJ	CONcoo	_	37	cc	_	XmlId=w_strasbBfm_037
+36	in	_	ADP	PRE	_	37	case	_	XmlId=w_strasbBfm_038
+37	aiudha	_	NOUN	NOMcom	_	29	obl	_	XmlId=w_strasbBfm_039
+38	et	_	CCONJ	CONcoo	_	41	cc	_	XmlId=w_strasbBfm_041
+39	in	_	ADP	PRE	_	41	case	_	XmlId=w_strasbBfm_042
+40	cadhuna	_	DET	DETind	PronType=Ind	41	det	_	XmlId=w_strasbBfm_043
+41	cosa	_	NOUN	NOMcom	_	37	conj	_	SpaceAfter=No|XmlId=w_strasbBfm_044
+42	,	_	PUNCT	PONfbl	_	29	punct	_	XmlId=w_strasbBfm_045
+43	si	_	ADV	ADVgen	_	29	advmod	_	XmlId=w_strasbBfm_046
+44	cum	_	SCONJ	CONsub	_	50	mark	_	XmlId=w_strasbBfm_047
+45	om	_	PRON	PROind	PronType=Ind	50	nsubj	_	XmlId=w_strasbBfm_048
+46	per	_	ADP	PRE	_	47	case	_	XmlId=w_strasbBfm_049
+47	dreit	_	NOUN	NOMcom	_	50	obl	_	XmlId=w_strasbBfm_050
+48	son	_	DET	DETpos	Poss=Yes	49	det	_	XmlId=w_strasbBfm_051
+49	fradra	_	NOUN	NOMcom	_	50	obj	_	XmlId=w_strasbBfm_052
+50	salvar	_	VERB	VERinf	VerbForm=Inf	29	advcl	_	XmlId=w_strasbBfm_053
+51	dift	_	AUX	VERcjg	VerbForm=Fin	50	aux	_	SpaceAfter=No|XmlId=w_strasbBfm_054
+52	,	_	PUNCT	PONfbl	_	29	punct	_	XmlId=w_strasbBfm_055
+53	in	_	ADP	PRE	_	54	case	_	XmlId=w_strasbBfm_056
+54	o	_	PRON	PROdem	PronType=Dem	29	obl	_	XmlId=w_strasbBfm_057
+55	quid	_	PRON	PROrel	PronType=Prs,Rel	59	obj	_	XmlId=w_strasbBfm_058
+56	il	_	PRON	PROper	PronType=Prs	59	nsubj	_	XmlId=w_strasbBfm_059
+57	mi	_	PRON	PROper	PronType=Prs	59	iobj	_	XmlId=w_strasbBfm_060
+58	altresi	_	ADV	ADVgen	_	59	advmod	_	XmlId=w_strasbBfm_061
+59	fazet	_	VERB	VERcjg	VerbForm=Fin	54	acl:relcl	_	SpaceAfter=No|XmlId=w_strasbBfm_062
+60	.	_	PUNCT	PONfrt	_	29	punct	_	XmlId=w_strasbBfm_063
+
+# text = Et ab Ludher nul plaid nunquam prindrai qui meon vol cist meon fradre Karle in damno sit.
+# translation = Et je ne prendrai jamais avec Lothaire aucun accord qui, par ma volonté, soit au détriment de mon frère Charles.
+# translation_en = And I shall never enter into any agreement with Lothair which, by my will, would be to the detriment of my brother Charles.
+# newdoc id = Strasbourg_842_prose
+# sent_id = 17676
+1	Et	_	CCONJ	CONcoo	_	7	cc:nc	_	XmlId=w_strasbBfm_064
+2	ab	_	ADP	PRE	_	3	case	_	XmlId=w_strasbBfm_065
+3	Ludher	_	PROPN	NOMpro	_	7	obl	_	XmlId=w_strasbBfm_066
+4	nul	_	DET	DETind	PronType=Ind	5	det	_	XmlId=w_strasbBfm_067
+5	plaid	_	NOUN	NOMcom	_	7	obj	_	XmlId=w_strasbBfm_068
+6	nunquam	_	ADV	ADVgen	_	7	advmod	_	XmlId=w_strasbBfm_069
+7	prindrai	_	VERB	VERcjg	VerbForm=Fin	0	root	_	XmlId=w_strasbBfm_070
+8	qui	_	PRON	PROrel	PronType=Prs,Rel	17	nsubj	_	XmlId=w_strasbBfm_071
+9	meon	_	DET	DETpos	Poss=Yes	10	det	_	XmlId=w_strasbBfm_073
+10	vol	_	NOUN	NOMcom	_	17	obl	_	XmlId=w_strasbBfm_074
+11	cist	_	DET	DETdem	PronType=Dem	13	det	_	XmlId=w_strasbBfm_076
+12	meon	_	ADJ	ADJpos	Poss=Yes	13	amod	_	XmlId=w_strasbBfm_077
+13	fradre	_	NOUN	NOMcom	_	17	obl	_	XmlId=w_strasbBfm_078
+14	Karle	_	PROPN	NOMpro	_	13	flat	_	XmlId=w_strasbBfm_079
+15	in	_	ADP	PRE	Foreign=Yes	16	case	_	XmlId=w_strasbBfm_080
+16	damno	_	NOUN	NOMcom	Foreign=Yes	17	obl	_	XmlId=w_strasbBfm_081
+17	sit	_	VERB	VERcjg	VerbForm=Fin	5	acl:relcl	_	SpaceAfter=No|XmlId=w_strasbBfm_082
+18	.	_	PUNCT	PONfrt	_	17	punct	_	XmlId=w_strasbBfm_083
+
+# text = Si Lodhuvigs sagrament, que son fradre Karlo jurat, conservat, et Karlus, meos sendra, de suo part non los tanit, si jo returnar non l'int pois, ne jo ne neuls cui eo returnar int pois, in nulla aiudha contra Lodhuwig nun li ju er.
+# translation = Si Louis tient le serment qu'il a juré à son frère Charles, et que Charles, mon seigneur, de son côté ne le tient pas, si je ne peux pas l'en détourner, ni moi ni personne que je pourrais en détourner ne lui serons d'aucune aide contre Louis.
+# translation_en = If Louis keeps the oath he swore to his brother Charles, and Charles, my lord, for his part does not keep it, if I cannot dissuade him from it, neither I nor anyone I could dissuade from it will give him any aid against Louis.
+# newdoc id = Strasbourg_842_prose
+# sent_id = 17677
+# newpar id = 2
+1	Si	_	ADV	ADVgen	_	11	mark	_	XmlId=w_strasbBfm_084
+2	Lodhuvigs	_	PROPN	NOMpro	_	11	nsubj	_	XmlId=w_strasbBfm_085
+3	sagrament	_	NOUN	NOMcom	_	11	obj	_	SpaceAfter=No|XmlId=w_strasbBfm_086
+4	,	_	PUNCT	PONfbl	_	9	punct	_	XmlId=w_strasbBfm_087
+5	que	_	PRON	PROrel	PronType=Prs,Rel	9	obj	_	XmlId=w_strasbBfm_088
+6	son	_	DET	DETpos	Poss=Yes	7	det	_	XmlId=w_strasbBfm_089
+7	fradre	_	NOUN	NOMcom	_	9	obl	_	XmlId=w_strasbBfm_090
+8	Karlo	_	PROPN	NOMpro	_	7	flat	_	XmlId=w_strasbBfm_091
+9	jurat	_	VERB	VERcjg	VerbForm=Fin	3	acl:relcl	_	SpaceAfter=No|XmlId=w_strasbBfm_092
+10	,	_	PUNCT	PONfbl	_	9	punct	_	XmlId=w_strasbBfm_093
+11	conservat	_	VERB	VERcjg	VerbForm=Fin	52	advcl	_	SpaceAfter=No|XmlId=w_strasbBfm_094
+12	,	_	PUNCT	PONfbl	_	24	punct	_	XmlId=w_strasbBfm_095
+13	et	_	CCONJ	CONcoo	_	24	cc	_	XmlId=w_strasbBfm_096
+14	Karlus	_	PROPN	NOMpro	_	24	nsubj	_	SpaceAfter=No|XmlId=w_strasbBfm_097
+15	,	_	PUNCT	PONfbl	_	17	punct	_	XmlId=w_strasbBfm_098
+16	meos	_	DET	DETpos	Poss=Yes	17	det	_	XmlId=w_strasbBfm_099
+17	sendra	_	NOUN	NOMcom	_	14	appos	_	SpaceAfter=No|XmlId=w_strasbBfm_100
+18	,	_	PUNCT	PONfbl	_	17	punct	_	XmlId=w_strasbBfm_101
+19	de	_	ADP	PRE	_	21	case	_	XmlId=w_strasbBfm_102
+20	suo	_	DET	DETpos	Poss=Yes	21	det	_	XmlId=w_strasbBfm_103
+21	part	_	NOUN	NOMcom	_	24	obl	_	XmlId=w_strasbBfm_104
+22	non	_	ADV	ADVneg	Polarity=Neg	24	advmod	_	XmlId=w_strasbBfm_105
+23	los	_	PRON	PROper.PROper	PronType=Prs	24	obj	_	XmlId=w_strasbBfm_106
+24	tanit	_	VERB	VERcjg	VerbForm=Fin	11	conj	_	SpaceAfter=No|XmlId=w_strasbBfm_107
+25	,	_	PUNCT	PONfbl	_	52	punct	_	XmlId=w_strasbBfm_108
+26	si	_	ADV	ADVgen	_	28	mark	_	XmlId=w_strasbBfm_109
+27	jo	_	PRON	PROper	PronType=Prs	28	nsubj	_	XmlId=w_strasbBfm_110
+28	returnar	_	VERB	VERinf	VerbForm=Inf	52	advcl	_	XmlId=w_strasbBfm_111
+29	non	_	ADV	ADVneg	Polarity=Neg	28	advmod	_	XmlId=w_strasbBfm_112
+30	l'	_	PRON	PROper	PronType=Prs	28	iobj	_	SpaceAfter=No|XmlId=w_strasbBfm_113
+31	int	_	ADV	PROadv	PronType=Dem	28	obl	_	XmlId=w_strasbBfm_114
+32	pois	_	AUX	VERcjg	VerbForm=Fin	28	aux	_	SpaceAfter=No|XmlId=w_strasbBfm_115
+33	,	_	PUNCT	PONfbl	_	35	punct	_	XmlId=w_strasbBfm_116
+34	ne	_	CCONJ	CONcoo	_	35	cc	_	XmlId=w_strasbBfm_117
+35	jo	_	PRON	PROper	PronType=Prs	27	conj	_	XmlId=w_strasbBfm_118
+36	ne	_	CCONJ	CONcoo	_	37	cc	_	XmlId=w_strasbBfm_119
+37	neuls	_	PRON	PROind	PronType=Ind	27	conj	_	XmlId=w_strasbBfm_120
+38	cui	_	PRON	PROrel	PronType=Prs,Rel	40	obl	_	XmlId=w_strasbBfm_121
+39	eo	_	PRON	PROper	PronType=Prs	40	nsubj	_	XmlId=w_strasbBfm_122
+40	returnar	_	VERB	VERinf	VerbForm=Inf	37	acl:relcl	_	XmlId=w_strasbBfm_123
+41	int	_	ADV	PROadv	PronType=Dem	40	obl	_	XmlId=w_strasbBfm_124
+42	pois	_	AUX	VERcjg	VerbForm=Fin	40	aux	_	SpaceAfter=No|XmlId=w_strasbBfm_125
+43	,	_	PUNCT	PONfbl	_	52	punct	_	XmlId=w_strasbBfm_126
+44	in	_	ADP	PRE	Foreign=Yes	46	case	_	XmlId=w_strasbBfm_127
+45	nulla	_	DET	DETind	PronType=Ind	46	det	_	XmlId=w_strasbBfm_128
+46	aiudha	_	NOUN	NOMcom	_	52	obl	_	XmlId=w_strasbBfm_129
+47	contra	_	ADP	PRE	_	48	case	_	XmlId=w_strasbBfm_130
+48	Lodhuwig	_	PROPN	NOMpro	_	46	nmod	_	XmlId=w_strasbBfm_131
+49	nun	_	ADV	ADVneg	Polarity=Neg	52	advmod	_	XmlId=w_strasbBfm_132
+50	li	_	PRON	PROper	PronType=Prs	52	iobj	_	XmlId=w_strasbBfm_133
+51	ju	_	ADV	PROadv	PronType=Dem	52	obl:advmod	_	XmlId=w_strasbBfm_134
+52	er	_	VERB	VERcjg	VerbForm=Fin	0	root	_	SpaceAfter=No|XmlId=w_strasbBfm_135
+53	.	_	PUNCT	PONfrt	_	52	punct	_	XmlId=w_strasbBfm_136
+

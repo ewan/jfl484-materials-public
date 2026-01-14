@@ -1,0 +1,338 @@
+# text = Buona pulcella fut Eulalia.
+# translation = Eulalie fut une bonne jeune fille.
+# translation_en = Eulalie was a good young girl.
+# sent_id = StEulalie-0
+# newdoc id = StEulalie_900_verse
+1	Buona	_	ADJ	_	_	2	amod	_	XmlId=w_eulaliBfm_1
+2	pulcella	_	NOUN	_	_	0	root	_	XmlId=w_eulaliBfm_2
+3	fut	_	AUX	_	_	2	cop	_	XmlId=w_eulaliBfm_3
+4	Eulalia	_	PROPN	_	_	2	nsubj	_	SpaceAfter=No|XmlId=w_eulaliBfm_4
+5	.	_	PUNCT	_	_	2	punct	_	XmlId=w_eulaliBfm_5
+
+# text = Bel auret corps bellezour anima.
+# translation = Elle avait un beau corps et une âme encore plus belle.
+# translation_en = She had a beautiful body and an even more beautiful soul.
+# sent_id = StEulalie-1
+# newdoc id = StEulalie_900_verse
+1	Bel	_	ADJ	_	_	2	xcomp	_	XmlId=w_eulaliBfm_6
+2	auret	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_7
+3	corps	_	NOUN	_	_	2	obj	_	XmlId=w_eulaliBfm_8
+4	bellezour	_	ADJ	_	_	5	amod	_	XmlId=w_eulaliBfm_9
+5	anima	_	NOUN	_	_	3	conj	_	SpaceAfter=No|XmlId=w_eulaliBfm_10
+6	.	_	PUNCT	_	_	2	punct	_	XmlId=w_eulaliBfm_11
+
+# text = Voldrent la veintre li Deo inimi.
+# translation = Les ennemis de Dieu voulurent la vaincre.
+# translation_en = God's enemies wanted to defeat her.
+# sent_id = StEulalie-2
+# newdoc id = StEulalie_900_verse
+1	Voldrent	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_12
+2	la	_	PRON	_	_	3	obj	_	XmlId=w_eulaliBfm_13
+3	veintre	_	VERB	_	_	1	xcomp	_	XmlId=w_eulaliBfm_14
+4	li	_	DET	_	_	6	det	_	XmlId=w_eulaliBfm_15
+5	Deo	_	PROPN	_	_	6	nmod	_	XmlId=w_eulaliBfm_16
+6	inimi	_	NOUN	_	_	1	nsubj	_	SpaceAfter=No|XmlId=w_eulaliBfm_17
+7	.	_	PUNCT	_	_	1	punct	_	XmlId=w_eulaliBfm_18
+
+# text = Voldrent la faire diaule servir.
+# translation = Ils voulurent la faire servir le diable.
+# translation_en = They wanted to make her serve the devil.
+# sent_id = StEulalie-3
+# newdoc id = StEulalie_900_verse
+1	Voldrent	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_19
+2	la	_	PRON	_	_	3	obj	_	XmlId=w_eulaliBfm_20
+3	faire	_	VERB	_	_	1	xcomp	_	XmlId=w_eulaliBfm_21
+4	diaule	_	NOUN	_	_	5	obj	_	XmlId=w_eulaliBfm_22
+5	servir	_	VERB	_	_	3	xcomp	_	SpaceAfter=No|XmlId=w_eulaliBfm_23
+6	.	_	PUNCT	_	_	1	punct	_	XmlId=w_eulaliBfm_24
+
+# text = Elle no'nt eskoltet les mals conselliers, Qu'elle Deo raneiet chi maent sus en ciel.
+# translation = Elle n'a pas écouté les mauvais conseillers, qui voulaient qu'elle renie Dieu qui demeure au ciel.
+# translation_en = She did not listen to the bad advisors, who wanted her to renounce God who dwells in heaven.
+# sent_id = StEulalie-4
+# newdoc id = StEulalie_900_verse
+1	Elle	_	PRON	_	_	4	nsubj	_	XmlId=w_eulaliBfm_25
+2	no'	_	ADV	_	_	4	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_26
+3	nt	_	ADV	_	_	4	obl:advmod	_	XmlId=w_eulaliBfm_27
+4	eskoltet	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_28
+5	les	_	DET	_	_	7	det	_	XmlId=w_eulaliBfm_29
+6	mals	_	ADJ	_	_	7	amod	_	XmlId=w_eulaliBfm_30
+7	conselliers	_	NOUN	_	_	4	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_31
+8	,	_	PUNCT	_	_	7	punct	_	XmlId=w_eulaliBfm_32
+9	Qu'	_	CCONJ	_	_	12	mark	_	SpaceAfter=No|XmlId=w_eulaliBfm_33
+10	elle	_	PRON	_	_	12	nsubj	_	XmlId=w_eulaliBfm_34
+11	Deo	_	PROPN	_	_	12	obj	_	XmlId=w_eulaliBfm_35
+12	raneiet	_	VERB	_	_	7	acl	_	XmlId=w_eulaliBfm_36
+13	chi	_	PRON	_	_	14	nsubj	_	XmlId=w_eulaliBfm_37
+14	maent	_	VERB	_	_	11	acl:relcl	_	XmlId=w_eulaliBfm_38
+15	sus	_	ADV	_	_	14	advmod	_	XmlId=w_eulaliBfm_39
+16	en	_	ADP	_	_	17	case	_	XmlId=w_eulaliBfm_40
+17	ciel	_	NOUN	_	_	14	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_41
+18	.	_	PUNCT	_	_	4	punct	_	XmlId=w_eulaliBfm_42
+
+# text = Ne por or ned argent ne paramenz, Por manatce regiel ne preiement, Niule cose non la pouret omque pleier La polle sempre non amast lo Deo menestier.
+# translation = Ni pour or ni pour argent ni pour parures, ni pour menace royale ni pour prière, nulle chose ne put jamais la détourner de toujours aimer le service de Dieu.
+# translation_en = Neither for gold nor for silver nor for finery, neither for royal threat nor for entreaty, nothing could ever turn her from always loving the service of God.
+# sent_id = StEulalie-5
+# newdoc id = StEulalie_900_verse
+1	Ne	_	CCONJ	_	_	3	cc:nc	_	XmlId=w_eulaliBfm_43
+2	por	_	ADP	_	_	3	case	_	XmlId=w_eulaliBfm_44
+3	or	_	NOUN	_	_	21	obl	_	XmlId=w_eulaliBfm_45
+4	ned	_	CCONJ	_	_	5	cc	_	XmlId=w_eulaliBfm_46
+5	argent	_	NOUN	_	_	3	conj	_	XmlId=w_eulaliBfm_47
+6	ne	_	CCONJ	_	_	7	cc	_	XmlId=w_eulaliBfm_48
+7	paramenz	_	NOUN	_	_	3	conj	_	SpaceAfter=No|XmlId=w_eulaliBfm_49
+8	,	_	PUNCT	_	_	10	punct	_	XmlId=w_eulaliBfm_50
+9	Por	_	ADP	_	_	10	case	_	XmlId=w_eulaliBfm_51
+10	manatce	_	NOUN	_	_	21	obl	_	XmlId=w_eulaliBfm_52
+11	regiel	_	ADJ	_	_	10	amod	_	XmlId=w_eulaliBfm_53
+12	ne	_	CCONJ	_	_	13	cc	_	XmlId=w_eulaliBfm_54
+13	preiement	_	NOUN	_	_	10	conj	_	SpaceAfter=No|XmlId=w_eulaliBfm_55
+14	,	_	PUNCT	_	_	10	punct	_	XmlId=w_eulaliBfm_56
+15	Niule	_	DET	_	_	16	det	_	XmlId=w_eulaliBfm_57
+16	cose	_	NOUN	_	_	21	nsubj	_	XmlId=w_eulaliBfm_58
+17	non	_	ADV	_	_	21	advmod	_	XmlId=w_eulaliBfm_59
+18	la	_	PRON	_	_	21	obj	_	XmlId=w_eulaliBfm_60
+19	pouret	_	AUX	_	_	21	aux	_	XmlId=w_eulaliBfm_61
+20	omque	_	ADV	_	_	21	advmod	_	XmlId=w_eulaliBfm_62
+21	pleier	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_63
+22	La	_	DET	_	_	23	det	_	XmlId=w_eulaliBfm_64
+23	polle	_	NOUN	_	_	26	nsubj	_	XmlId=w_eulaliBfm_65
+24	sempre	_	ADV	_	_	26	advmod	_	XmlId=w_eulaliBfm_66
+25	non	_	ADV	_	_	26	advmod	_	XmlId=w_eulaliBfm_67
+26	amast	_	VERB	_	_	21	advcl	_	XmlId=w_eulaliBfm_68
+27	lo	_	DET	_	_	29	det	_	XmlId=w_eulaliBfm_69
+28	Deo	_	PROPN	_	_	29	nmod	_	XmlId=w_eulaliBfm_70
+29	menestier	_	NOUN	_	_	26	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_71
+30	.	_	PUNCT	_	_	21	punct	_	XmlId=w_eulaliBfm_72
+
+# text = E por o fu presentede Maximiien Chi rex eret a cels dis soure pagiens.
+# translation = Et pour cela elle fut présentée à Maximien qui était roi en ces jours sur les païens.
+# translation_en = And for this she was presented to Maximian who was king in those days over the pagans.
+# sent_id = StEulalie-6
+# newdoc id = StEulalie_900_verse
+1	E	_	CCONJ	_	_	5	cc:nc	_	XmlId=w_eulaliBfm_73
+2	por	_	ADP	_	_	3	case	_	XmlId=w_eulaliBfm_74
+3	o	_	PRON	_	_	5	obl	_	XmlId=w_eulaliBfm_75
+4	fu	_	AUX	_	_	5	aux:pass	_	XmlId=w_eulaliBfm_76
+5	presentede	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_77
+6	Maximiien	_	PROPN	_	_	5	obl	_	XmlId=w_eulaliBfm_78
+7	Chi	_	DET	_	_	8	nsubj	_	XmlId=w_eulaliBfm_79
+8	rex	_	NOUN	_	_	6	acl:relcl	_	XmlId=w_eulaliBfm_80
+9	eret	_	AUX	_	_	8	cop	_	XmlId=w_eulaliBfm_81
+10	a	_	ADP	_	_	12	case	_	XmlId=w_eulaliBfm_82
+11	cels	_	DET	_	_	12	det	_	XmlId=w_eulaliBfm_83
+12	dis	_	NOUN	_	_	8	obl	_	XmlId=w_eulaliBfm_84
+13	soure	_	ADP	_	_	14	case	_	XmlId=w_eulaliBfm_85
+14	pagiens	_	NOUN	_	_	8	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_86
+15	.	_	PUNCT	_	_	5	punct	_	XmlId=w_eulaliBfm_87
+
+# text = Il li enortet dont lei nonque chielt Qued elle fuiet lo nom christiien.
+# translation = Il l'exhorte, ce dont elle ne se soucie guère, à ce qu'elle fuie le nom chrétien.
+# translation_en = He exhorts her, which she cares little about, to flee the Christian name.
+# sent_id = StEulalie-7
+# newdoc id = StEulalie_900_verse
+1	Il	_	PRON	_	_	3	nsubj	_	XmlId=w_eulaliBfm_88
+2	li	_	PRON	_	_	3	iobj	_	XmlId=w_eulaliBfm_89
+3	enortet	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_90
+4	dont	_	PRON	_	_	7	obl	_	XmlId=w_eulaliBfm_91
+5	lei	_	PRON	_	_	7	obl	_	XmlId=w_eulaliBfm_92
+6	nonque	_	ADV	_	_	7	advmod	_	XmlId=w_eulaliBfm_93
+7	chielt	_	VERB	_	_	3	parataxis	_	XmlId=w_eulaliBfm_94
+8	Qued	_	SCONJ	_	_	10	mark	_	XmlId=w_eulaliBfm_95
+9	elle	_	PRON	_	_	10	nsubj	_	XmlId=w_eulaliBfm_96
+10	fuiet	_	VERB	_	_	3	ccomp	_	XmlId=w_eulaliBfm_97
+11	lo	_	DET	_	_	12	det	_	XmlId=w_eulaliBfm_98
+12	nom	_	NOUN	_	_	10	obj	_	XmlId=w_eulaliBfm_99
+13	christiien	_	ADJ	_	_	12	amod	_	SpaceAfter=No|XmlId=w_eulaliBfm_100
+14	.	_	PUNCT	_	_	3	punct	_	XmlId=w_eulaliBfm_101
+
+# text = Ell'ent adunet lo suon element.
+# translation = Elle en rassemble son élément.
+# translation_en = She gathers its element from it.
+# sent_id = StEulalie-8
+# newdoc id = StEulalie_900_verse
+1	Ell'	_	PRON	_	_	3	nsubj	_	SpaceAfter=No|XmlId=w_eulaliBfm_102
+2	ent	_	ADV	_	_	3	obl:advmod	_	XmlId=w_eulaliBfm_103
+3	adunet	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_104
+4	lo	_	DET	_	_	6	det	_	XmlId=w_eulaliBfm_105
+5	suon	_	ADJ	_	_	6	amod	_	XmlId=w_eulaliBfm_106
+6	element	_	NOUN	_	_	3	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_107
+7	.	_	PUNCT	_	_	3	punct	_	XmlId=w_eulaliBfm_108
+
+# text = Melz sostendreiet les empedementz Qu'elle perdesse sa virginitet.
+# translation = Elle supporterait mieux les obstacles plutôt que de perdre sa virginité.
+# translation_en = She would rather endure obstacles than lose her virginity.
+# sent_id = StEulalie-9
+# newdoc id = StEulalie_900_verse
+1	Melz	_	ADV	_	_	2	advmod	_	XmlId=w_eulaliBfm_109
+2	sostendreiet	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_110
+3	les	_	DET	_	_	4	det	_	XmlId=w_eulaliBfm_111
+4	empedementz	_	NOUN	_	_	2	obj	_	XmlId=w_eulaliBfm_112
+5	Qu'	_	SCONJ	_	_	7	mark	_	SpaceAfter=No|XmlId=w_eulaliBfm_113
+6	elle	_	PRON	_	_	7	nsubj	_	XmlId=w_eulaliBfm_114
+7	perdesse	_	VERB	_	_	2	advcl	_	XmlId=w_eulaliBfm_115
+8	sa	_	DET	_	_	9	det	_	XmlId=w_eulaliBfm_116
+9	virginitet	_	NOUN	_	_	7	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_117
+10	.	_	PUNCT	_	_	2	punct	_	XmlId=w_eulaliBfm_118
+
+# text = Por os furet morte a grand honestet.
+# translation = Pour cela elle mourut avec grande dignité.
+# translation_en = For that she died with great dignity.
+# sent_id = StEulalie-10
+# newdoc id = StEulalie_900_verse
+1	Por	_	ADP	_	_	2	case	_	XmlId=w_eulaliBfm_119
+2	os	_	PRON	PROdem.PROper	_	4	expl	_	Expand=o+se|XmlId=w_eulaliBfm_120
+3	furet	_	AUX	_	_	4	aux	_	XmlId=w_eulaliBfm_121
+4	morte	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_122
+5	a	_	ADP	_	_	7	case	_	XmlId=w_eulaliBfm_123
+6	grand	_	ADJ	_	_	7	amod	_	XmlId=w_eulaliBfm_124
+7	honestet	_	NOUN	_	_	4	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_125
+8	.	_	PUNCT	_	_	4	punct	_	XmlId=w_eulaliBfm_126
+
+# text = Enz enl fou lo getterent com arde tost.
+# translation = Ils le jetèrent dans le feu pour qu'il brûle vite.
+# translation_en = They threw it into the fire so it would burn quickly.
+# sent_id = StEulalie-11
+# newdoc id = StEulalie_900_verse
+1	Enz	_	ADV	_	_	5	advmod	_	XmlId=w_eulaliBfm_127
+2	enl	_	ADP	_	_	3	case:det	_	XmlId=w_eulaliBfm_128
+3	fou	_	NOUN	_	_	5	obl	_	XmlId=w_eulaliBfm_129
+4	lo	_	PRON	_	_	5	obj	_	XmlId=w_eulaliBfm_130
+5	getterent	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_131
+6	com	_	SCONJ	_	_	7	mark	_	XmlId=w_eulaliBfm_132
+7	arde	_	VERB	_	_	5	advcl	_	XmlId=w_eulaliBfm_133
+8	tost	_	ADV	_	_	7	advmod	_	SpaceAfter=No|XmlId=w_eulaliBfm_134
+9	.	_	PUNCT	_	_	5	punct	_	XmlId=w_eulaliBfm_135
+
+# text = Elle colpes non auret,
+# translation = Elle n'avait pas de fautes,
+# translation_en = She had no faults,
+# sent_id = StEulalie-12
+# newdoc id = StEulalie_900_verse
+1	Elle	_	PRON	_	_	4	nsubj	_	XmlId=w_eulaliBfm_136
+2	colpes	_	NOUN	_	_	4	obj	_	XmlId=w_eulaliBfm_137
+3	non	_	ADV	_	_	4	advmod	_	XmlId=w_eulaliBfm_138
+4	auret	_	VERB	_	_	0	root	_	SpaceAfter=No|XmlId=w_eulaliBfm_139
+5	,	_	PUNCT	_	_	4	punct	_	XmlId=w_eulaliBfm_140
+
+# text = por o nos coist.
+# translation = pour cela nous afflige.
+# translation_en = for that we grieve.
+# sent_id = StEulalie-13
+# newdoc id = StEulalie_900_verse
+1	por	_	ADP	_	_	2	case	_	XmlId=w_eulaliBfm_141
+2	o	_	PRON	_	_	4	obl	_	XmlId=w_eulaliBfm_142
+3	nos	_	PRON	ADVgen.PROper	_	4	expl	_	XmlId=w_eulaliBfm_143
+4	coist	_	VERB	_	_	0	root	_	SpaceAfter=No|XmlId=w_eulaliBfm_144
+5	.	_	PUNCT	_	_	4	punct	_	XmlId=w_eulaliBfm_145
+
+# text = A czo nos voldret concreidre li rex pagiens.
+# translation = À cela voudrait nous faire croire le roi païen.
+# translation_en = To this the pagan king would have us believe.
+# sent_id = StEulalie-14
+# newdoc id = StEulalie_900_verse
+1	A	_	ADP	_	_	2	case	_	XmlId=w_eulaliBfm_146
+2	czo	_	PRON	_	_	4	obl	_	XmlId=w_eulaliBfm_147
+3	nos	_	PRON	ADVgen.PROper	_	5	expl	_	XmlId=w_eulaliBfm_148
+4	voldret	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_149
+5	concreidre	_	VERB	_	_	4	xcomp	_	XmlId=w_eulaliBfm_150
+6	li	_	DET	_	_	7	det	_	XmlId=w_eulaliBfm_151
+7	rex	_	NOUN	_	_	4	nsubj	_	XmlId=w_eulaliBfm_152
+8	pagiens	_	ADJ	_	_	7	amod	_	SpaceAfter=No|XmlId=w_eulaliBfm_153
+9	.	_	PUNCT	_	_	7	punct	_	XmlId=w_eulaliBfm_154
+
+# text = Ad une spede li roveret tolir lo chief.
+# translation = Il lui ordonna de lui couper la tête avec une épée.
+# translation_en = He ordered him to cut off his head with a sword.
+# sent_id = StEulalie-15
+# newdoc id = StEulalie_900_verse
+1	Ad	_	ADP	_	_	3	case	_	XmlId=w_eulaliBfm_155
+2	une	_	DET	_	_	3	det	_	XmlId=w_eulaliBfm_156
+3	spede	_	NOUN	_	_	5	obl	_	XmlId=w_eulaliBfm_157
+4	li	_	PRON	_	_	5	iobj	_	XmlId=w_eulaliBfm_158
+5	roveret	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_159
+6	tolir	_	VERB	_	_	5	xcomp	_	XmlId=w_eulaliBfm_160
+7	lo	_	DET	_	_	8	det	_	XmlId=w_eulaliBfm_161
+8	chief	_	NOUN	_	_	6	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_162
+9	.	_	PUNCT	_	_	5	punct	_	XmlId=w_eulaliBfm_163
+
+# text = La domnizelle celle kose non contredist:
+# translation = La demoiselle ne contredit pas cette chose:
+# translation_en = The young lady did not contradict this thing:
+# sent_id = StEulalie-16
+# newdoc id = StEulalie_900_verse
+1	La	_	DET	_	_	2	det	_	XmlId=w_eulaliBfm_164
+2	domnizelle	_	NOUN	_	_	6	nsubj	_	XmlId=w_eulaliBfm_165
+3	celle	_	DET	_	_	4	det	_	XmlId=w_eulaliBfm_166
+4	kose	_	NOUN	_	_	6	obj	_	XmlId=w_eulaliBfm_167
+5	non	_	ADV	_	_	6	advmod	_	XmlId=w_eulaliBfm_168
+6	contredist	_	VERB	_	_	0	root	_	SpaceAfter=No|XmlId=w_eulaliBfm_169
+7	:	_	PUNCT	_	_	6	punct	_	XmlId=w_eulaliBfm_170
+
+# text = Volt lo seule lazsier
+# translation = Il veut quitter le monde
+# translation_en = He wants to leave the world
+# sent_id = StEulalie-17
+# newdoc id = StEulalie_900_verse
+1	Volt	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_171
+2	lo	_	DET	_	_	3	det	_	XmlId=w_eulaliBfm_172
+3	seule	_	NOUN	_	_	4	obj	_	XmlId=w_eulaliBfm_173
+4	lazsier	_	VERB	_	_	1	xcomp	_	XmlId=w_eulaliBfm_174
+
+# text = si ruovet Krist.
+# translation = il demande au Christ.
+# translation_en = he asks Christ.
+# sent_id = StEulalie-18
+# newdoc id = StEulalie_900_verse
+1	si	_	ADV	_	_	2	cc:nc	_	XmlId=w_eulaliBfm_175
+2	ruovet	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_176
+3	Krist	_	PROPN	_	_	2	obj	_	SpaceAfter=No|XmlId=w_eulaliBfm_177
+4	.	_	PUNCT	_	_	2	punct	_	XmlId=w_eulaliBfm_178
+
+# text = In figure de colomb volat a ciel.
+# translation = Sous la forme d'une colombe, il vola au ciel.
+# translation_en = In the form of a dove, he flew to heaven.
+# sent_id = StEulalie-19
+# newdoc id = StEulalie_900_verse
+1	In	_	ADP	_	_	2	case	_	XmlId=w_eulaliBfm_179
+2	figure	_	NOUN	_	_	5	obl	_	XmlId=w_eulaliBfm_180
+3	de	_	ADP	_	_	4	case	_	XmlId=w_eulaliBfm_181
+4	colomb	_	NOUN	_	_	2	nmod	_	XmlId=w_eulaliBfm_182
+5	volat	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_183
+6	a	_	ADP	_	_	7	case	_	XmlId=w_eulaliBfm_184
+7	ciel	_	NOUN	_	_	5	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_185
+8	.	_	PUNCT	_	_	5	punct	_	XmlId=w_eulaliBfm_186
+
+# text = Tuit oram que per nos degnet preier Qued auuisset de nos Christus mercit Post la mort et a lui nos laist venir Par souue clementia.
+# translation = Tous prions qu'elle daigne prier pour nous, que le Christ ait pitié de nous après la mort et qu'il nous laisse venir à lui par sa clémence.
+# translation_en = We all pray that she deigns to pray for us, that Christ may have mercy on us after death and that by his clemency he may allow us to come to him.
+# sent_id = StEulalie-20
+# newdoc id = StEulalie_900_verse
+1	Tuit	_	PRON	_	_	2	nsubj	_	XmlId=w_eulaliBfm_187
+2	oram	_	VERB	_	_	0	root	_	XmlId=w_eulaliBfm_188
+3	que	_	SCONJ	_	_	6	mark	_	XmlId=w_eulaliBfm_189
+4	per	_	ADP	_	_	5	case	_	XmlId=w_eulaliBfm_190
+5	nos	_	PRON	_	_	7	obl	_	XmlId=w_eulaliBfm_191
+6	degnet	_	VERB	_	_	2	ccomp	_	XmlId=w_eulaliBfm_192
+7	preier	_	VERB	_	_	6	xcomp	_	XmlId=w_eulaliBfm_193
+8	Qued	_	SCONJ	_	_	9	mark	_	XmlId=w_eulaliBfm_194
+9	auuisset	_	VERB	_	_	7	ccomp	_	XmlId=w_eulaliBfm_195
+10	de	_	ADP	_	_	11	case	_	XmlId=w_eulaliBfm_196
+11	nos	_	PRON	_	_	9	obl	_	XmlId=w_eulaliBfm_197
+12	Christus	_	PROPN	_	_	9	nsubj	_	XmlId=w_eulaliBfm_198
+13	mercit	_	NOUN	_	_	9	obj	_	XmlId=w_eulaliBfm_199
+14	Post	_	ADP	_	_	16	case	_	XmlId=w_eulaliBfm_200
+15	la	_	DET	_	_	16	det	_	XmlId=w_eulaliBfm_201
+16	mort	_	NOUN	_	_	9	obl	_	XmlId=w_eulaliBfm_202
+17	et	_	CCONJ	_	_	21	cc	_	XmlId=w_eulaliBfm_203
+18	a	_	ADP	_	_	19	case	_	XmlId=w_eulaliBfm_204
+19	lui	_	PRON	_	_	21	obl	_	XmlId=w_eulaliBfm_205
+20	nos	_	PRON	_	_	21	obj	_	XmlId=w_eulaliBfm_206
+21	laist	_	VERB	_	_	9	conj	_	XmlId=w_eulaliBfm_207
+22	venir	_	VERB	_	_	21	xcomp	_	XmlId=w_eulaliBfm_208
+23	Par	_	ADP	_	_	25	case	_	XmlId=w_eulaliBfm_209
+24	souue	_	DET	_	_	25	det	_	XmlId=w_eulaliBfm_210
+25	clementia	_	NOUN	_	_	21	obl	_	SpaceAfter=No|XmlId=w_eulaliBfm_211
+26	.	_	PUNCT	_	_	2	punct	_	XmlId=w_eulaliBfm_212
+
