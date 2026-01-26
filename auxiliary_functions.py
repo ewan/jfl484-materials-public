@@ -111,8 +111,8 @@ def createObservation(tokens, currentToken):
             'title': tokens[currentToken].title,
             'text': tokens[currentToken].text,
             'translation': tokens[currentToken].translation,
-            'FORM': tokens[currentToken].form,
-            'DEPREL': tokens[currentToken].deprel
+            'form': tokens[currentToken].form,
+            'deprel': tokens[currentToken].deprel
         }
         return newObservation
     else:
