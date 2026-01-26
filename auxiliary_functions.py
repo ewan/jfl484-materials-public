@@ -1,3 +1,8 @@
+from dataclasses import dataclass, asdict
+from typing import Optional, List
+import traceback
+import re
+
 def get_text_from_conllu(filename):
     text = []
     with open(filename, 'r', encoding='utf-8') as f:
@@ -39,3 +44,92 @@ def extract_words_from_conllu(path):
             # Append the FORM (second field, index 1)
             words.append(parts[1])
     return words
+
+@dataclass
+class Token:
+    sent_id: str
+    index: int
+    form: str
+    lemma: str
+    upos: str
+    xpos: str
+    feats: str
+    head: int
+    deprel: str
+    deps: str
+    misc: str
+    text: str
+    translation: Optional[str] = None
+    translation_en: Optional[str] = None
+    title: Optional[str] = None
+
+    def __post_init__(self):
+        self.index = int(self.index) # coerce to int
+        self.head = int(self.head)
+
+def buildTokenList(myFile):
+    annotation_keys = ['index', 'form', 'lemma', 'upos', 'xpos', 'feats', 'head', 'deprel', 'deps', 'misc']
+    sentences = []
+    for line in myFile:
+        if line.startswith('# text ='):
+            currentToken = {}
+            currentToken['text'] = line.split('=')[1].strip()
+        elif line.startswith('# translation ='):
+            currentToken['translation'] = line.split('=')[1].strip()
+        elif line.startswith('# translation_en ='):
+            currentToken['translation_en'] = line.split('=')[1].strip()
+        elif line.startswith('# newdoc id ='):
+            currentToken['title'] = line.split('=')[1].strip()
+        elif line.startswith('# sent_id ='):
+            currentToken['sent_id'] = line.split('=')[1].strip()
+        elif re.match(r'\d+', line):
+            currentToken.update(dict(zip(annotation_keys, re.split(r'\t+', line))))
+            sentences.append(Token(**currentToken))
+    return sentences
+
+def isClauseHead(tokens, currentToken, clauseHeads):
+    """
+    Find if a token is a clause head.
+
+    Args:
+        tokens: list of Token dataclass instances
+        currentToken: index of the token whose status we are checking
+        clauseHeads: list of dependencies that characterize clause heads
+    """
+    if tokens[currentToken].deprel in clauseHeads:
+        return True
+    elif tokens[currentToken].deprel in {'conj', 'parataxis'}:
+        return isClauseHead(tokens, tokens[currentToken].head, clauseHeads)
+    else:
+        return False
+    
+def createObservation(tokens, currentToken):
+    clauseHeads = {'root', 'advcl', 'acl', 'csubj', 'ccomp', 'xcomp'}
+    if isClauseHead(tokens, currentToken, clauseHeads):
+        newObservation = {
+            'sent_id' : tokens[currentToken].sent_id,
+            'title': tokens[currentToken].title,
+            'text': tokens[currentToken].text,
+            'translation': tokens[currentToken].translation,
+            'FORM': tokens[currentToken].form,
+            'DEPREL': tokens[currentToken].deprel
+        }
+        return newObservation
+    else:
+        return None
+
+def process(fileList, createObservation):
+    observations = [] # List of observations
+    for f in fileList:
+        try:
+            with open(f, 'r', encoding='utf-8') as currentFile:
+                tokens = buildTokenList(currentFile)
+            for currentToken in range(len(tokens)):
+                newObservation = createObservation(tokens, currentToken)
+                if newObservation: observations.append(newObservation)
+            print("Processed file: %s" % f)
+        except Exception as e:
+            print(e)
+            traceback.print_exc()
+
+    return observations
