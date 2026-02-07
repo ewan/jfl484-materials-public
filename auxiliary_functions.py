@@ -99,10 +99,7 @@ def isClauseHead(tokens, currentToken, clauseHeads):
     if tokens[currentToken].deprel in clauseHeads:
         return True
     elif tokens[currentToken].deprel in {'conj', 'parataxis'}:
-        sentence = [t for t in tokens if t.sent_id == tokens[currentToken].sent_id]
-        headIndex = tokens[currentToken].head # this is the "head" value for the current token 
-        newToken = int(headIndex) - 1 # this is the corresponding index of the head in the list sentence
-        return isClauseHead(sentence, newToken, clauseHeads)
+        return isClauseHead(tokens, tokens[currentToken].head, clauseHeads)
     else:
         return False
     
