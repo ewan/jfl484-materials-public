@@ -73,7 +73,7 @@ def print_clause(sent_id, head_index,
                  index_col="index", head_col="head", form_col="form",
                  upos_col="upos", deprel_col="deprel"):
     """
-    Prints the clause headed by `head_index` in `sent_id`.
+    Prints the clause headed by `head_index` in `sent_id` with full sentence metadata.
     The output is sorted by token index (linear order).
     """
     if _TREE["groups"] is None:
@@ -94,6 +94,18 @@ def print_clause(sent_id, head_index,
             print(f"Sentence ID {sent_id} not found.")
             return
 
+    start_node = int(head_index)
+    
+    # --- METADATA PRINTING ---
+    print(f"Sentence: {sent_id} | Clause Head: {start_node}")
+    if "text" in s.columns:
+         print(f"Text:       {s['text'].iloc[0]}")
+    if "translation" in s.columns:
+        print(f"Mod. Fr.:   {s['translation'].iloc[0]}")
+    if "translation_en" in s.columns:
+        print(f"English:    {s['translation_en'].iloc[0]}")
+    print("-" * 40)
+
     # 2. Data Cleaning
     s = s[pd.to_numeric(s[index_col], errors="coerce").notna()].copy()
     s[index_col] = s[index_col].astype(int)
@@ -108,8 +120,6 @@ def print_clause(sent_id, head_index,
         children[h].append(i)
 
     # 4. Find Transitive Closure (All descendants of head_index)
-    start_node = int(head_index)
-    
     # Check if head exists
     if start_node not in s[index_col].values:
         print(f"Error: Head index {start_node} not found in sentence {sent_id}.")
@@ -131,10 +141,7 @@ def print_clause(sent_id, head_index,
     clause_df.sort_values(by=index_col, inplace=True)
 
     # 6. Print Output
-    print(f"Sentence: {sent_id} | Clause Head: {start_node}")
-    print("-" * 40)
-    
-    # Reconstruct readable text
+    # Reconstruct readable text of just the clause
     tokens = clause_df[form_col].astype(str).tolist()
     print(f"Clause Text: \"{' '.join(tokens)}\"")
     print("-" * 40)
