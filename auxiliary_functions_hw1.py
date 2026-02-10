@@ -152,7 +152,9 @@ def print_clause(sent_id, head_index,
         form = r[form_col]
         upos = r.get(upos_col, "_")
         dep = r.get(deprel_col, "_")
+        head = r.get(head_col, "_")
         
         # Mark the head visually
         marker = " (HEAD)" if i == start_node else ""
-        print(f"{i}: {form} /{upos} [{dep}]{marker}")
+        print(f"{i}: {form}/{upos}/{head} [{dep}]{marker}")
+
