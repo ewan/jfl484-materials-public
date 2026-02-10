@@ -3,13 +3,15 @@ from typing import Optional, List
 import traceback
 import re
 
+
 def get_text_from_conllu(filename):
     text = []
-    with open(filename, 'r', encoding='utf-8') as f:
+    with open(filename, "r", encoding="utf-8") as f:
         for line in f:
-            if line.startswith('# text ='):
+            if line.startswith("# text ="):
                 text.append(line[8:].strip())
-    return ' '.join(text)
+    return " ".join(text)
+
 
 def extract_words_from_conllu(path):
     """
@@ -45,6 +47,7 @@ def extract_words_from_conllu(path):
             words.append(parts[1])
     return words
 
+
 @dataclass
 class Token:
     sent_id: str
@@ -64,28 +67,41 @@ class Token:
     title: Optional[str] = None
 
     def __post_init__(self):
-        self.index = int(self.index) # coerce to int
+        self.index = int(self.index)  # coerce to int
         self.head = int(self.head)
 
+
 def buildTokenList(myFile):
-    annotation_keys = ['index', 'form', 'lemma', 'upos', 'xpos', 'feats', 'head', 'deprel', 'deps', 'misc']
+    annotation_keys = [
+        "index",
+        "form",
+        "lemma",
+        "upos",
+        "xpos",
+        "feats",
+        "head",
+        "deprel",
+        "deps",
+        "misc",
+    ]
     sentences = []
     for line in myFile:
-        if line.startswith('# text ='):
+        if line.startswith("# text ="):
             currentToken = {}
-            currentToken['text'] = line.split('=')[1].strip()
-        elif line.startswith('# translation ='):
-            currentToken['translation'] = line.split('=')[1].strip()
-        elif line.startswith('# translation_en ='):
-            currentToken['translation_en'] = line.split('=')[1].strip()
-        elif line.startswith('# newdoc id ='):
-            currentToken['title'] = line.split('=')[1].strip()
-        elif line.startswith('# sent_id ='):
-            currentToken['sent_id'] = line.split('=')[1].strip()
-        elif re.match(r'\d+', line):
-            currentToken.update(dict(zip(annotation_keys, re.split(r'\t+', line))))
+            currentToken["text"] = line.split("=")[1].strip()
+        elif line.startswith("# translation ="):
+            currentToken["translation"] = line.split("=")[1].strip()
+        elif line.startswith("# translation_en ="):
+            currentToken["translation_en"] = line.split("=")[1].strip()
+        elif line.startswith("# newdoc id ="):
+            currentToken["title"] = line.split("=")[1].strip()
+        elif line.startswith("# sent_id ="):
+            currentToken["sent_id"] = line.split("=")[1].strip()
+        elif re.match(r"\d+", line):
+            currentToken.update(dict(zip(annotation_keys, re.split(r"\t+", line))))
             sentences.append(Token(**currentToken))
     return sentences
+
 
 def isClauseHead(tokens, currentToken, clauseHeads):
     """
@@ -98,41 +114,63 @@ def isClauseHead(tokens, currentToken, clauseHeads):
     """
     if tokens[currentToken].deprel in clauseHeads:
         return True
-    elif tokens[currentToken].deprel in {'conj', 'parataxis'}:
+    elif tokens[currentToken].deprel in {"conj", "parataxis"}:
         sentence = [t for t in tokens if t.sent_id == tokens[currentToken].sent_id]
-        headIndex = tokens[currentToken].head # this is the "head" value for the current token 
-        newToken = headIndex - 1 # this is the corresponding index of the head in the sentence-list
+        headIndex = tokens[
+            currentToken
+        ].head  # this is the "head" value for the current token
+        newToken = (
+            headIndex - 1
+        )  # this is the corresponding index of the head in the sentence-list
         return isClauseHead(sentence, newToken, clauseHeads)
     else:
         return False
-    
+
+
 def createObservation(tokens, currentToken):
-    clauseHeads = {'root', 'advcl', 'acl', 'csubj', 'ccomp', 'xcomp'}
+    clauseHeads = {"root", "advcl", "acl", "csubj", "ccomp", "xcomp"}
     if isClauseHead(tokens, currentToken, clauseHeads):
         newObservation = {
-            'sent_id' : tokens[currentToken].sent_id,
-            'title': tokens[currentToken].title,
-            'text': tokens[currentToken].text,
-            'translation': tokens[currentToken].translation,
-            'form': tokens[currentToken].form,
-            'deprel': tokens[currentToken].deprel
+            "sent_id": tokens[currentToken].sent_id,
+            "title": tokens[currentToken].title,
+            "text": tokens[currentToken].text,
+            "translation": tokens[currentToken].translation,
+            "form": tokens[currentToken].form,
+            "deprel": tokens[currentToken].deprel,
         }
         return newObservation
     else:
         return None
 
+
 def process(fileList, createObservation):
-    observations = [] # List of observations
+    observations = []  # List of observations
     for f in fileList:
         try:
-            with open(f, 'r', encoding='utf-8') as currentFile:
+            with open(f, "r", encoding="utf-8") as currentFile:
                 tokens = buildTokenList(currentFile)
             for currentToken in range(len(tokens)):
                 newObservation = createObservation(tokens, currentToken)
-                if newObservation: observations.append(newObservation)
+                if newObservation:
+                    observations.append(newObservation)
             print("Processed file: %s" % f)
         except Exception as e:
             print(e)
             traceback.print_exc()
 
     return observations
+
+
+def get_ngram_counts(corpus_sentences, n):
+    counts = {}
+    for sentence in corpus_sentences:
+        padded_sent = ["<s>"] * (n - 1) + sentence + ["</s>"]
+        for i in range(len(padded_sent) - n + 1):
+            ctx = tuple(padded_sent[i : i + n - 1])
+            nxt = padded_sent[i + n - 1]
+            if ctx not in counts:
+                counts[ctx] = {}
+            if nxt not in counts[ctx]:
+                counts[ctx][nxt] = 0
+            counts[ctx][nxt] += 1
+    return counts
